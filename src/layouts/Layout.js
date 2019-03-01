@@ -5,11 +5,11 @@ import Header from './Header';
 export default (props) => {
 
     return (
-        <div id="layout">
+        <React.Fragment>
             <Header />
             <div id="content" className="container">
                 {props.children}
             </div>
-        </div>
+        </React.Fragment>
     )
 }
