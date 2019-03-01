@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
-  render() {
+// Asset Import
+import './assets/css/main.scss';
+import './assets/vendor/bootstrap-4.3.1-dist/css/bootstrap.css';
+import './assets/vendor/fontawesome-free-5.7.2-web/css/all.css';
+
+import Routes from './routes/index';
+
+
+export default () => {
+
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+        <div id="app">
+            <Routes />            
+        </div>
+    )
 }
-
-export default App;

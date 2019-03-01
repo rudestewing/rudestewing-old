@@ -1,0 +1,15 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+html, body  {
+    height: 100%;
+    background-color: #ffffff;
+    font-family: $proximaNova;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import './header.scss';

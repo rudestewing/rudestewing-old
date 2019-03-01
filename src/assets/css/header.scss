@@ -1,0 +1,45 @@
+#header {
+    display: block;
+    height: 90px;
+    width: 100%;
+    padding: 0 50px;
+    overflow: hidden;
+    
+    #logo {
+        float: left;
+        font-family: $proximaNovaBold;
+        font-size: 16pt;
+        text-transform: uppercase;
+        padding: 20px;
+        letter-spacing: 4px;
+    }
+    
+    #nav {
+        float: right;
+        font-family: $proximaNovaSemiBold;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            margin: 0;
+            padding: 0;
+            padding: 20px;
+
+            a {
+                color: black;
+                border-bottom: 5px solid transparent;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    border-bottom: 5px solid black;
+                    // font-weight: bold;
+                }
+            }
+        }
+    }
+}
