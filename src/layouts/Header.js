@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 export default ()  => {
 
     return (
-        <div id="header">
+        <div id="header" className="container">
             <div id="logo">
                 rudestewing
             </div>

@@ -7,13 +7,12 @@ import './assets/vendor/fontawesome-free-5.7.2-web/css/all.css';
 
 import Routes from './routes/index';
 
-
 export default () => {
 
 
     return (
-        <div id="app">
+        <React.Fragment>
             <Routes />            
-        </div>
+        </React.Fragment>
     )
 }
