@@ -9,7 +9,6 @@ import Routes from './routes/index';
 
 export default () => {
 
-
     return (
         <React.Fragment>
             <Routes />            
