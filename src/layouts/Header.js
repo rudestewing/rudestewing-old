@@ -5,36 +5,32 @@ export default ()  => {
 
     useEffect(() => {
         var elHeader = document.getElementById('header');
-        var headerTop = elHeader.offsetTop;
         var headerHeight = elHeader.offsetHeight;
         var currentScrollY = 0;
         var lastScrollY = 0;
 
         function onScroll() {
             currentScrollY = window.pageYOffset;
-            console.log(currentScrollY);
-
-
+            // console.log(currentScrollY);
             
             if(currentScrollY < lastScrollY) {
-                console.log('scroll up');
+                // console.log('scroll up');
                 if(currentScrollY >= headerHeight) {
                     showHeaderHeader();
                     setFixed();
                 }
             } else if(currentScrollY > lastScrollY) {
-                console.log('scroll down');
+                // console.log('scroll down');
                 if(currentScrollY >= headerHeight) {
                     hideHeader();
                 }
             }
 
             if(currentScrollY == 0 ) {
-                console.log('asolole');
+                // console.log('asolole');
                 setAbsoluteHeader();
                 elHeader.classList.remove('sticky');
             }
-
             lastScrollY = currentScrollY;
         }
 
