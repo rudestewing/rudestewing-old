@@ -10,7 +10,7 @@ export default (props) => {
         <div className="container">
             <div className="content-detail">
                 <div className="row">
-                    
+                    collection detail {id}
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
 import Loading from '../../layouts/Loading';
+import CollectionItem from './CollectionItem';
 
 export default (props) => {
     const [collections, setCollections] = useState([]);
@@ -36,33 +37,23 @@ export default (props) => {
             ]);
         }, 2000);
         return () => {
-
+            console.log('component unmount');
         }
     }, []);
 
-    const collectionsElement = collections.length > 0 ? 
-            collections.map((collection, index) => {
-                return (
-                    <div key={index} className="col-md-4 collection-wrapper" >
-                        <Link to={`/collection/detail/${collection.id}`} className="collection-item" >
-                            <div className="thumbnail" style={{
-                                backgroundImage: `url(${collection.thumbnail})`
-                            }} ></div>
-                            <div className="overlay">
-                                <div className="title"> {collection.title} </div>
-                            </div>
-                        </Link>
-                    </div>
-                )
-            }) :
-            <Loading />
-
-            
     return (
         <div className="container">
             <div id="collection">
                 <div className="row">
-                    {collectionsElement}
+                    {
+                        collections.length > 0 ? 
+                            collections.map((collection, index) => {
+                                return (
+                                    <CollectionItem key={index} collection={collection} />
+                                )
+                            }) :
+                            <Loading />
+                    }
                 </div>
             </div>
         </div>
