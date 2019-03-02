@@ -1,10 +1,11 @@
 import React from 'react';
 
 export default () => {
+
     return (
-        <div class="container">
-            <div id="loading">
-                Loading Content ...
+        <div className="container">
+            <div id="article">
+                article 
             </div>
         </div>
     )

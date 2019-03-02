@@ -30,6 +30,7 @@ export default ()  => {
                 // console.log('asolole');
                 setAbsoluteHeader();
                 elHeader.classList.remove('sticky');
+                elHeader.classList.remove('hide');
             }
             lastScrollY = currentScrollY;
         }
@@ -56,9 +57,9 @@ export default ()  => {
 
         window.addEventListener('scroll', onScroll);
 
-
         return () => {
             console.log('header unmount');
+
         }
     }, []);
 
@@ -71,9 +72,9 @@ export default ()  => {
                 <div id="nav">
                     <ul>
                         <li> <Link to="/"> Home </Link> </li>
-                        <li> <Link to="/collection"> Collection </Link> </li>
+                        <li> <Link to="/collection"> Collections </Link> </li>
+                        <li> <Link to="/article"> Articles </Link> </li>
                         <li> <Link to="/about"> About Me </Link> </li>
-                        <li> <Link to="/contact"> Contact </Link> </li>
                     </ul>
                 </div>
             </div>

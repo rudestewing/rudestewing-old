@@ -20,9 +20,9 @@ export const publicRoutes = [
     },
     {
         exact: true,
-        path: '/contact',
+        path: '/article',
         component: loadable({
-            loader: () => { return import('../modules/contact/Contact') },
+            loader: () => { return import('../modules/article/Article') },
             loading: Loading
         })
     },
@@ -34,6 +34,15 @@ export const publicRoutes = [
             loading: Loading
         })
     },
+    {
+        exact: true,
+        path: '/collection/detail/:id',
+        component: loadable({
+            loader: () => { return import('../modules/collection/CollectionDetail') },
+            loading: Loading
+        })
+    },
+    
 ]
 
 export const privateRoutes = [

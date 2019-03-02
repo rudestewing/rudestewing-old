@@ -3,11 +3,6 @@ import HomeVector from '../../assets/images/home-vector.png';
 
 export default (props) => {
     const [data] = useState({
-        message: `
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Veritatis nam quas, quo accusantium error nihil exercitationem. 
-            Autem iusto illum dolorum totam voluptas ipsam maxime, recusandae, 
-            saepe hic aut, quibusdam non. `,
         socialMedias: [
             {
                 url: 'https://www.linkedin.com/in/rudi-setiawan-a2820217a/',
@@ -35,6 +30,8 @@ export default (props) => {
         }
     }, []);
 
+    console.log(data.message)
+
     return (
         <div id="home">
             <img id="home-vector" src={HomeVector} alt=""/>
@@ -42,11 +39,19 @@ export default (props) => {
                 <div className="row">
                     <div className="col-md-6 col-sm-12">
                         <h4> Hello ! </h4>
-                        <h6> Welcome to my personal page </h6>
+                        <h6 style={{marginBottom: '20px'}}> thank you for visiting my page </h6>
+                        <p> <i> Rudi Setiawan </i> </p>
+                        <p> an ordinary guy who loves Javascript & Laravel  </p>
                         <p> 
-                            {
-                                data.message ? data.message : '' 
-                            }
+                            {/* {
+                                data.message ?
+                                    data.message.split('\n').map((item, index) => {
+                                        return (
+                                            <p key={index}> {item}  </p>
+                                        )
+                                    }) : 
+                                    '' 
+                            } */}
                         </p>
                     </div>
                 </div>
