@@ -12,19 +12,27 @@ export default ()  => {
 
         function onScroll() {
             currentScrollY = window.pageYOffset;
+            console.log(currentScrollY);
 
+
+            
             if(currentScrollY < lastScrollY) {
-                showHeader();
+                console.log('scroll up');
                 if(currentScrollY >= headerHeight) {
+                    showHeaderHeader();
                     setFixed();
                 }
             } else if(currentScrollY > lastScrollY) {
+                console.log('scroll down');
                 if(currentScrollY >= headerHeight) {
                     hideHeader();
-                    setTimeout(() => {
-                        setAbsolute();
-                    }, 300);
                 }
+            }
+
+            if(currentScrollY == 0 ) {
+                console.log('asolole');
+                setAbsoluteHeader();
+                elHeader.classList.remove('sticky');
             }
 
             lastScrollY = currentScrollY;
@@ -35,15 +43,14 @@ export default ()  => {
             elHeader.classList.add('fixed');
         }
 
-        function setAbsolute() {
+        function setAbsoluteHeader() {
             elHeader.classList.remove('fixed');
             elHeader.classList.add('absolute');
         }
         
-        function showHeader() {
+        function showHeaderHeader() {
             elHeader.classList.remove('hide');
             elHeader.classList.add('sticky');
-
         }
 
         function hideHeader() {
@@ -60,7 +67,7 @@ export default ()  => {
     }, []);
 
     return (
-        <div id="header" className="">
+        <div id="header" className="absolute">
             <div className="container">
                 <Link id="logo" to="/">
                     rudestewing

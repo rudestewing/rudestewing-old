@@ -51,9 +51,9 @@ $headerHeight: 70px;
     background-color: $base;
     z-index: 3;
     position:absolute;
-    border-bottom: 1px solid black;
 
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
     &.absolute {
         position: absolute;
     }
@@ -63,11 +63,13 @@ $headerHeight: 70px;
     
     &.sticky {
         transform: translateY(0);
+        box-shadow: 0 1px 1px #ccc;
     }
 
     &.hide{
         transform: translateY(-($headerHeight));
     }
+    
     
     #logo {
         float: left;
