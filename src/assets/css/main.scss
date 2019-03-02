@@ -105,12 +105,12 @@ $headerHeight: 70px;
                 padding-right: 0;
             }
             a {
-                padding: 0 5px 5px 5px;
+                padding-bottom: 5px;
                 color: $black;
                 border-bottom: 5px solid transparent;
                 text-decoration: none;
                 display: block;
-                &:hover {
+                &:hover,  /* &.active */  {
                     border-bottom: 5px solid black;
                 }
             }
@@ -194,6 +194,7 @@ $headerHeight: 70px;
         height: 220px;
         display: flex;
         align-items: center;
+        box-shadow: 1px 2px 3px #ccc;
 
         div.thumbnail {
             display: block;
@@ -265,3 +266,6 @@ $headerHeight: 70px;
     animation: flickerAnimation 1.3s infinite;
 }
 
+#articles {
+    height: 20px;
+}

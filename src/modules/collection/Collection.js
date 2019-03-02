@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom';
 import Loading from '../../layouts/Loading';
 import CollectionItem from './CollectionItem';
 
+import imgSkkMigas from '../../assets/images/www.skkmigas.go.id.png';
+import imgMyIix from '../../assets/images/my.iix.net.id.png';
+import imgPortalHigen from '../../assets/images/portal-higen.png';
+
 export default (props) => {
     const [collections, setCollections] = useState([]);
 
@@ -12,15 +16,15 @@ export default (props) => {
             setCollections([
                 {
                     id: 1,
-                    title: 'IIX Management',
+                    title: 'HR System',
                     description: '',
                     thumbnail: 'https://cdn.dribbble.com/users/221507/screenshots/5917598/hungry-dev-full-sheet_4x.jpg',
                 },
                 {
                     id: 2,
-                    title: 'SKK Migas',
+                    title: 'IIX Management',
                     description: '',
-                    thumbnail: 'https://cdn.dribbble.com/users/221507/screenshots/5917598/hungry-dev-full-sheet_4x.jpg',
+                    thumbnail: imgMyIix,
                 },
                 {
                     id: 3,
@@ -30,9 +34,15 @@ export default (props) => {
                 },
                 {
                     id: 4,
-                    title: 'Payroll Program',
+                    title: 'SKK Migas',
                     description: '',
-                    thumbnail: 'https://cdn.dribbble.com/users/221507/screenshots/5917598/hungry-dev-full-sheet_4x.jpg',
+                    thumbnail: imgSkkMigas,
+                },
+                {
+                    id: 5, 
+                    title: 'VoIP Report Web Base',
+                    description: '',
+                    thumbnail: imgPortalHigen
                 }
             ]);
         }, 2000);

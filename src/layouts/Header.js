@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 export default ()  => {
 
@@ -71,10 +71,10 @@ export default ()  => {
                 </Link>
                 <div id="nav">
                     <ul>
-                        <li> <Link to="/"> Home </Link> </li>
-                        <li> <Link to="/collection"> Collections </Link> </li>
-                        <li> <Link to="/article"> Articles </Link> </li>
-                        <li> <Link to="/about"> About Me </Link> </li>
+                        <li> <NavLink to="/"> Home </NavLink> </li>
+                        <li> <NavLink to="/collection"> Collections </NavLink> </li>
+                        <li> <NavLink to="/article"> Articles </NavLink> </li>
+                        <li> <NavLink to="/about"> About Me </NavLink> </li>
                     </ul>
                 </div>
             </div>
