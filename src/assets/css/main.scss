@@ -101,7 +101,7 @@ $headerHeight: 70px;
         li {
             margin: 0;
             padding: 20px;
-            &:nth-last-child() {
+            &:last-child {
                 padding-right: 0;
             }
             a {

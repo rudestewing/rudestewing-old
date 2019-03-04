@@ -26,7 +26,7 @@ export default ()  => {
                 }
             }
 
-            if(currentScrollY == 0 ) {
+            if(currentScrollY === 0 ) {
                 // console.log('asolole');
                 setAbsoluteHeader();
                 elHeader.classList.remove('sticky');
@@ -59,7 +59,6 @@ export default ()  => {
 
         return () => {
             console.log('header unmount');
-
         }
     }, []);
 
@@ -74,7 +73,7 @@ export default ()  => {
                         <li> <NavLink to="/"> Home </NavLink> </li>
                         <li> <NavLink to="/collection"> Collections </NavLink> </li>
                         <li> <NavLink to="/article"> Articles </NavLink> </li>
-                        <li> <NavLink to="/about"> About Me </NavLink> </li>
+                        {/* <li> <NavLink to="/about"> About Me </NavLink> </li> */}
                     </ul>
                 </div>
             </div>

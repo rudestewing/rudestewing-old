@@ -24,10 +24,7 @@ export default (props) => {
     });
 
     useEffect(() => {
-        console.log('component loaded');
-        return () => {
-            console.log('component unmount');
-        }
+
     }, []);
 
     console.log(data.message)
@@ -40,19 +37,9 @@ export default (props) => {
                     <div className="col-md-6 col-sm-12">
                         <h4> Hello ! </h4>
                         <h6 style={{marginBottom: '20px'}}> thank you for visiting my page </h6>
-                        <p> <i> Rudi Setiawan </i> </p>
-                        <p> an ordinary guy who loves Javascript & Laravel  </p>
-                        <p> 
-                            {/* {
-                                data.message ?
-                                    data.message.split('\n').map((item, index) => {
-                                        return (
-                                            <p key={index}> {item}  </p>
-                                        )
-                                    }) : 
-                                    '' 
-                            } */}
-                        </p>
+                        <p> Rudi Setiawan </p>
+                        {/* <p> an ordinary guy who loves Javascript & Laravel  </p> */}
+                        <p> and I do web development  </p>
                     </div>
                 </div>
 
