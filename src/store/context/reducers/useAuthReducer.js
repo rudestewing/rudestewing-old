@@ -24,7 +24,7 @@ export const useAuthReducer = () => {
                     user: null
                 }
     
-            default: 
+            default:
                 return state;
         }
     }

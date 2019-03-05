@@ -7,23 +7,20 @@ import './assets/css/main.scss';
 
 import Routes from './routes/index';
 
-import Context from './store/context/index';
-import {useAuthReducer} from './store/reducers/useAuthReducer';
+import {AuthContext} from './store/context/index';
+import {useAuthReducer} from './store/context/reducers/useAuthReducer';
 
 export default () => {
     const {auth, authDispatch} = useAuthReducer();
 
-    const contextValue = {
-        auth: auth,
-        authDispatch: authDispatch
-        // add more values from reducers
-    }
-
     return (
         <React.Fragment>
-            <Context.Provider value={contextValue}>
-                <Routes />            
-            </Context.Provider>
+            <AuthContext.Provider value={{
+                auth: auth,
+                authDispatch: authDispatch
+            }}>
+                <Routes />     
+            </AuthContext.Provider>
         </React.Fragment>
     )
 }

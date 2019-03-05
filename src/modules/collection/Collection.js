@@ -8,14 +8,13 @@ import imgPortalHigen from '../../assets/images/portal-higen.png';
 import imgReconcile from '../../assets/images/reconcile-apjii.png';
 import imgNoImage from '../../assets/images/no-image.png';
 
-import Context from '../../store/context/index';
+import {AuthContext} from '../../store/context/index';
 
 export default (props) => {
     const [collections, setCollections] = useState([]);
-    const {auth} = useContext(Context);
-    
+    const {auth} = useContext(AuthContext);
     console.log(auth);
-
+    
     useEffect(() => {
         var fetchData = setTimeout(() => {
             setCollections([
@@ -56,7 +55,7 @@ export default (props) => {
                     thumbnail: imgPortalHigen
                 },
             ]);
-        }, 2000);
+        }, 500);
         
         return () => {
             clearTimeout(fetchData);
@@ -68,13 +67,13 @@ export default (props) => {
             <div className="row">
                 {
                     collections.length > 0 ? 
-                        collections.map((collection, index) => {
-                            return (
-                                <CollectionItem key={index} collection={collection} />
+                    collections.map((collection, index) => {
+                        return (
+                            <CollectionItem key={index} collection={collection} />
                             )
                         }) :
                         <Loading />
-                }
+                    }
             </div>
         </div>
     )
