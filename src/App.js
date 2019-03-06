@@ -10,17 +10,23 @@ import Routes from './routes/index';
 import {AuthContext} from './store/context/index';
 import {useAuthReducer} from './store/context/reducers/useAuthReducer';
 
+import {Provider} from 'react-redux';
+import store from './store/redux/index';
+
 export default () => {
     const {auth, authDispatch} = useAuthReducer();
 
     return (
         <React.Fragment>
-            <AuthContext.Provider value={{
-                auth: auth,
-                authDispatch: authDispatch
-            }}>
-                <Routes />     
-            </AuthContext.Provider>
+            <Provider store={store}>
+                <AuthContext.Provider value={{
+                    auth: auth,
+                    authDispatch: authDispatch
+                }}>
+                    <Routes />     
+                </AuthContext.Provider>
+            </Provider>
+
         </React.Fragment>
     )
 }

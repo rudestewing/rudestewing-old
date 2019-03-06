@@ -15,6 +15,13 @@ export default (props) => {
     const {auth} = useContext(AuthContext);
     console.log(auth);
     
+
+    useEffect(() => {
+        console.log('jalan nih');
+
+    }, []);
+
+
     useEffect(() => {
         var fetchData = setTimeout(() => {
             setCollections([

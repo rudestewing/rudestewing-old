@@ -1,7 +1,32 @@
 import React, {useState, useEffect} from 'react';
 import HomeVector from '../../assets/images/home-vector.png';
 
-export default (props) => {
+import {connect} from 'react-redux';
+import http from '../../utilities/http/index';
+
+
+const mapStateToProps = (state) => {
+    return {
+        cart: state.cart
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps, null)((props) => {
+    const person = {
+        name: 'rudestewing',
+        age: 23,
+        gender: 'male'
+    }
+
+    console.log(http);
+
+
     const [data] = useState({
         socialMedias: [
             {
@@ -24,10 +49,8 @@ export default (props) => {
     });
 
     useEffect(() => {
-
+        
     }, []);
-
-    console.log(data.message)
 
     return (
         <div id="home">
@@ -54,7 +77,7 @@ export default (props) => {
                                             <li key={index}> 
                                                 <a rel="noopener noreferrer"  target="_blank" href={item.url}> 
                                                     <i className={`fab fa-${item.faIcon}`}></i> 
-                                                </a> 
+                                                </a>
                                             </li>
                                         )
                                     }) :
@@ -67,4 +90,4 @@ export default (props) => {
             </div>            
         </div>
     )
-}
+});
