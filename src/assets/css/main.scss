@@ -124,7 +124,8 @@ $headerHeight: 70px;
     top: $headerHeight;
     min-height: calc(100vh - #{$headerHeight});
     z-index: 2;
-
+    padding-bottom: 20px;
+    
     $contentDetailWidth: 800px;
     .content-detail {
         margin: 0 auto;
@@ -133,17 +134,23 @@ $headerHeight: 70px;
         padding: 20px 0;
         min-height: 100vh;
 
-        h4.title {
+        #title {
             text-align: center;
             margin: 0;
         }
-        img#thumbnail {
+        #thumbnail {
             max-width: ($contentDetailWidth - 150px);
             margin: 20px auto;
             display: block;
         }
-        p.body {
+        #body {
             text-align: justify;
+            white-space: pre-line;
+        }
+        .member-item {
+            display: inline-block;
+            height: 50px;
+            width: 100px;
         }
     }
 }
@@ -163,10 +170,10 @@ $headerHeight: 70px;
     }
 
     h4 {
+        margin-bottom: 0;
         display: inline-block;
         font-size: 6em;
         color: #ad9894;
-        // margin-bottom: 15px;
         cursor: pointer;
         &:hover {
             color: $black;
@@ -175,9 +182,7 @@ $headerHeight: 70px;
 
     h6 {
         font-size: 1.5em;
-        margin-bottom: 5px;
         font-style: $proximaNova;
-        // font-weight: 300;
     }
 
     #social-media {

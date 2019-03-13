@@ -4,6 +4,7 @@ import
 from 'react';
 
 import {collectionState} from './state';
+import {memberState} from './state';
 
 export default (props) => {
     const {id} = props.match.params;
@@ -26,13 +27,15 @@ export default (props) => {
                 {
                     collection != null ? (
                         <React.Fragment>
-                            <h4 className="title">
+                            <h4 id="title">
                                 {collection.title}
                             </h4>
+                            
                             <img id="thumbnail" src={collection.thumbnail} alt=""/>
-                            <p className="body">
-                                {collection.body}
-                            </p>
+                            
+                            <div id="body">
+                                <p> {collection.body} </p>
+                            </div>
                         </React.Fragment>                        
                     ) : (
                         <p>
@@ -40,6 +43,15 @@ export default (props) => {
                         </p>
                     ) 
                 }
+
+                {/* <div id="team-member">
+                    <div className="member-item">
+                        <img id="avatar" src={memberState[0].avatar} alt=""/>
+                        <div id="name">
+                            {memberState[0].name}
+                        </div>
+                    </div>
+                </div> */}
             </div>
         </div>
     )

@@ -59,8 +59,8 @@ export default connect(mapStateToProps, null)((props) => {
                 <div className="row">
                     <div className="col-md-6 col-sm-12">
                         <h4> Hello ! </h4>
-                        <h6 style={{marginBottom: '20px'}}> thank you for visiting my page </h6>
-                        <p> Rudi Setiawan </p>
+                        <h6 style={{marginBottom: '40px'}}> welcome to my page </h6>
+                        <p> I'm Rudi Setiawan </p>
                         {/* <p> an ordinary guy who loves Javascript & Laravel  </p> */}
                         <p> and I do web development  </p>
                     </div>
