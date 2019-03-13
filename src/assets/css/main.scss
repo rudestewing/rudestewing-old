@@ -126,8 +126,22 @@ $headerHeight: 70px;
     min-height: calc(100vh - #{$headerHeight});
     z-index: 2;
 
+    $contentDetailWidth: 800px;
     .content-detail {
         margin: 0 auto;
+        max-width: $contentDetailWidth;
+        // background-color: #fff;
+        padding: 20px 0;
+        min-height: 100vh;
+
+        h4.title {
+            text-align: center;
+        }
+        img#thumbnail {
+            max-width: ($contentDetailWidth - 150px);
+            margin: 20px auto;
+            display: block;
+        }
     }
 }
 

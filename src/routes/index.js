@@ -13,22 +13,22 @@ export default() => {
             <Layout>
                 <Switch>
                     {
-                        publicRoutes.length > 0 ? 
+                        publicRoutes.length > 0 ?
                             publicRoutes.map((route, index) => {
                                 return (
                                     <Route {...route} key={index} />
                                 )
                             }) :
-                            <div> No Content ... </div>
+                            ('')
                     }
 
-                    <Route 
+                    <Route
                     component={
                         loadable({
                             loader: () => import('../modules/error/Error404'),
                             loading: Loading
                         })
-                    }/> 
+                    }/>
                 </Switch>
             </Layout>
         </BrowserRouter>

@@ -5,7 +5,7 @@ export default () => {
     return (
         <div id="error">
             <p> Sorry </p>
-            <p>404 Not found</p>
+            <p>Page Not found</p>
         </div>
     )
 }
