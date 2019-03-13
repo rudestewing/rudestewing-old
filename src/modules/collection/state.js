@@ -32,6 +32,7 @@ export const collectionState = [
         body: `
         HR & Payroll manajemen sistem adalah aplikasi untuk manajemen data karyawan & penggajian pada PT DMC (Dinamika Megatama Citra) yang sebelumnya hanya menggunakan Excel.\n\nHR sistemnya terdiri dari:\n- Input, Edit data baru karyawan\n- Mutasi Karyawan\n- Cuti Karyawan\n- Pemberhentian Karyawan\n\nPayroll sistemnya terdiri dari:\n- Input, Edit Gaji Pokok\n- Input, Edit tunjangan tetap & tidak tetap\n- Upload tunjangan tidak tetap\n- Perhitungan pph-21 \n
         `,
+        url: 'http://hr.mydmc.co.id',
         screenshoots: [
             
         ]
@@ -45,6 +46,7 @@ export const collectionState = [
         MYIIX merupakan aplikasi berbasis website untuk mempermudah manajemen data interkoneksi IIX (Indonesia Internet Exchange).\n
         Fitur :\n - Request Interkoneksi baru. \n - Request Transit ASN. \n - Memantau traffic interkoneksi real time.  
         `,
+        url: 'https://my.iix.net.id',
         screenshoots: [
             
         ]
@@ -57,6 +59,7 @@ export const collectionState = [
         body: `
         Foto Paragames 2018 adalah website untuk menyimpan foto foto atlet asian paragames.
         `,
+        url: 'https://fotoparagames2018.com',
         screenshoots: [
             
         ]
@@ -69,6 +72,7 @@ export const collectionState = [
         body: `
         Apjii Event merupakan tempat dimana anggota APJII dapat mendaftar untuk mengikuti event yang diselenggarakan oleh penyelenggara.
         `,
+        url: 'https://meeting.idnic.net',
         screenshoots: [
             
         ]
@@ -81,6 +85,7 @@ export const collectionState = [
         body: `
         Redesign tampilan dan infrastruktur backend yang sebelumnya menggunakan native PHP menjadi lebih ter struktur menggunakan salah satu framework.
         `,
+        url: 'http://www.skkmigas.go.id',
         screenshoots: [
             
         ]
@@ -93,6 +98,7 @@ export const collectionState = [
         body: `
         Aplikasi berbasis web yang digunakan untuk rekonsiliasi data anggota APJII.
         `,
+        url: '/',
         screenshoots: [
             
         ]
@@ -111,6 +117,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
+        url: 'http://portal.higen.net.id',
         screenshoots: [
             
         ]

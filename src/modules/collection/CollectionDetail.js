@@ -30,9 +30,9 @@ export default (props) => {
                             <h4 id="title">
                                 {collection.title}
                             </h4>
-                            
-                            <img id="thumbnail" src={collection.thumbnail} alt=""/>
-                            
+                            <a target="_blank" rel="noopener noreferrer" href={collection.url}>
+                                <img id="thumbnail" src={collection.thumbnail} alt=""/>
+                            </a>
                             <div id="body">
                                 <p> {collection.body} </p>
                             </div>
@@ -43,15 +43,6 @@ export default (props) => {
                         </p>
                     ) 
                 }
-
-                {/* <div id="team-member">
-                    <div className="member-item">
-                        <img id="avatar" src={memberState[0].avatar} alt=""/>
-                        <div id="name">
-                            {memberState[0].name}
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
     )

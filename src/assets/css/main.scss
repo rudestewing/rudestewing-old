@@ -119,6 +119,8 @@ $headerHeight: 70px;
 
 
 /* CONTENT */
+$contentDetailWidth: 800px;
+
 #content {
     position: relative;
     top: $headerHeight;
@@ -126,7 +128,6 @@ $headerHeight: 70px;
     z-index: 2;
     padding-bottom: 20px;
     
-    $contentDetailWidth: 800px;
     .content-detail {
         margin: 0 auto;
         max-width: $contentDetailWidth;
@@ -284,10 +285,26 @@ $headerHeight: 70px;
         50%  { opacity:0; }
         100% { opacity:1; }
     }
-
     animation: flickerAnimation 1.3s infinite;
 }
 
-#articles {
-    height: 20px;
+#article {
+    max-width: $contentDetailWidth;
+    margin: 0 auto;
+    display: block;
+
+    .article-item {
+        display: flex;
+        min-height: 160px;
+        width: 100%;
+        background-color: $white;
+        margin: 20px;
+        box-shadow: 1px 2px 3px #ccc;
+        
+        img#thumbnail {
+            padding: 10px 0px 10px 10px;
+            height: 140px;
+            width: 140px;
+        }
+    }
 }
