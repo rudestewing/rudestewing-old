@@ -75,7 +75,6 @@ $headerHeight: 70px;
         transform: translateY(-($headerHeight));
     }
     
-    
     #logo {
         float: left;
         font-family: $proximaNovaBold;
@@ -110,7 +109,7 @@ $headerHeight: 70px;
                 border-bottom: 5px solid transparent;
                 text-decoration: none;
                 display: block;
-                &:hover,  /* &.active */  {
+                &:hover {
                     border-bottom: 5px solid black;
                 }
             }
@@ -136,11 +135,15 @@ $headerHeight: 70px;
 
         h4.title {
             text-align: center;
+            margin: 0;
         }
         img#thumbnail {
             max-width: ($contentDetailWidth - 150px);
             margin: 20px auto;
             display: block;
+        }
+        p.body {
+            text-align: justify;
         }
     }
 }

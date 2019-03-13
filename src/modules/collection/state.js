@@ -9,7 +9,7 @@ export const collectionState = [
         id: 'hr-payroll',
         title: 'HR System',
         thumbnail: imgNoImage,
-        'body': `
+        body: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pulvinar commodo. Nulla quis lectus sit amet augue cursus ultricies vitae vitae 
         orci. Proin congue ligula libero, sit amet consectetur orci congue ut. Fusce imperdiet dui lacus, quis vulputate nibh feugiat convallis. Nulla dolor elit, 
         egestas vitae viverra eget, pharetra ac quam. Phasellus tincidunt augue sit amet tempus pharetra. Praesent nisl enim, varius vitae nibh sit amet, molestie laoreet 
@@ -18,7 +18,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
-        'screenshoots': [
+        screenshoots: [
 
         ]
     },
@@ -27,7 +27,7 @@ export const collectionState = [
         id: 'myiix',
         title: 'IIX Management',
         thumbnail: imgMyIix,
-        'body': `
+        body: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pulvinar commodo. Nulla quis lectus sit amet augue cursus ultricies vitae vitae 
         orci. Proin congue ligula libero, sit amet consectetur orci congue ut. Fusce imperdiet dui lacus, quis vulputate nibh feugiat convallis. Nulla dolor elit, 
         egestas vitae viverra eget, pharetra ac quam. Phasellus tincidunt augue sit amet tempus pharetra. Praesent nisl enim, varius vitae nibh sit amet, molestie laoreet 
@@ -36,7 +36,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
-        'screenshoots': [
+        screenshoots: [
             
         ]
     },
@@ -45,7 +45,7 @@ export const collectionState = [
         id: 'foto-paragames',
         title: 'foto paragames 2018',
         thumbnail: imgNoImage,
-        'body': `
+        body: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pulvinar commodo. Nulla quis lectus sit amet augue cursus ultricies vitae vitae 
         orci. Proin congue ligula libero, sit amet consectetur orci congue ut. Fusce imperdiet dui lacus, quis vulputate nibh feugiat convallis. Nulla dolor elit, 
         egestas vitae viverra eget, pharetra ac quam. Phasellus tincidunt augue sit amet tempus pharetra. Praesent nisl enim, varius vitae nibh sit amet, molestie laoreet 
@@ -54,7 +54,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
-        'screenshoots': [
+        screenshoots: [
             
         ]
     },
@@ -63,7 +63,7 @@ export const collectionState = [
         id: 'skkmigas',
         title: 'SKK Migas',
         thumbnail: imgSkkMigas,
-        'body': `
+        body: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pulvinar commodo. Nulla quis lectus sit amet augue cursus ultricies vitae vitae 
         orci. Proin congue ligula libero, sit amet consectetur orci congue ut. Fusce imperdiet dui lacus, quis vulputate nibh feugiat convallis. Nulla dolor elit, 
         egestas vitae viverra eget, pharetra ac quam. Phasellus tincidunt augue sit amet tempus pharetra. Praesent nisl enim, varius vitae nibh sit amet, molestie laoreet 
@@ -72,7 +72,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
-        'screenshoots': [
+        screenshoots: [
             
         ]
     },
@@ -81,7 +81,7 @@ export const collectionState = [
         id: 'rekonsiliasi-apjii-member',
         title: 'APJII Member Reconcile',
         thumbnail: imgReconcile,
-        'body': `
+        body: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pulvinar commodo. Nulla quis lectus sit amet augue cursus ultricies vitae vitae 
         orci. Proin congue ligula libero, sit amet consectetur orci congue ut. Fusce imperdiet dui lacus, quis vulputate nibh feugiat convallis. Nulla dolor elit, 
         egestas vitae viverra eget, pharetra ac quam. Phasellus tincidunt augue sit amet tempus pharetra. Praesent nisl enim, varius vitae nibh sit amet, molestie laoreet 
@@ -90,7 +90,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
-        'screenshoots': [
+        screenshoots: [
             
         ]
     },
@@ -99,7 +99,7 @@ export const collectionState = [
         id: 'cdr-report', 
         title: 'VoIP Report Web Base',
         thumbnail: imgPortalHigen,
-        'body': `
+        body: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend pulvinar commodo. Nulla quis lectus sit amet augue cursus ultricies vitae vitae 
         orci. Proin congue ligula libero, sit amet consectetur orci congue ut. Fusce imperdiet dui lacus, quis vulputate nibh feugiat convallis. Nulla dolor elit, 
         egestas vitae viverra eget, pharetra ac quam. Phasellus tincidunt augue sit amet tempus pharetra. Praesent nisl enim, varius vitae nibh sit amet, molestie laoreet 
@@ -108,7 +108,7 @@ export const collectionState = [
         Curabitur sagittis convallis turpis at dictum. Maecenas a pharetra nunc. Duis lobortis sapien sit amet imperdiet lobortis. Praesent commodo, tortor eu fermentum tristique, ipsum libero convallis 
         eros, vel aliquam erat leo in risus.
         `,
-        'screenshoots': [
+        screenshoots: [
             
         ]
     },
