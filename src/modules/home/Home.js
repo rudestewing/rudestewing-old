@@ -1,31 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import HomeVector from '../../assets/images/home-vector.png';
 
-import {connect} from 'react-redux';
-import http from '../../utilities/http/index';
-
-
-const mapStateToProps = (state) => {
-    return {
-        cart: state.cart
-    }
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-
-    }
-}
-
-export default connect(mapStateToProps, null)((props) => {
+export default (props) => {
     const person = {
         name: 'rudestewing',
         age: 23,
         gender: 'male'
     }
-
-    console.log(http);
-
 
     const [data] = useState({
         socialMedias: [
@@ -90,4 +71,4 @@ export default connect(mapStateToProps, null)((props) => {
             </div>            
         </div>
     )
-});
+}

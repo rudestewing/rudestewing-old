@@ -3,11 +3,9 @@ import Loading from '../../layouts/Loading';
 import CollectionItem from './CollectionItem';
 
 import {collectionState} from './state';
-import {AuthContext} from '../../store/context/index';
 
 export default (props) => {
     const [collections, setCollections] = useState([]);
-    const {auth} = useContext(AuthContext);
 
     useEffect(() => {
         var fetchData = setTimeout(() => {
