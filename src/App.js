@@ -7,12 +7,7 @@ import './assets/css/main.scss';
 
 import Routes from './routes/index';
 
-import {AuthContext} from './store/context/index';
-import {useAuthReducer} from './store/context/reducers/useAuthReducer';
-
 export default () => {
-    const {auth, authDispatch} = useAuthReducer();
-
     return (
         <React.Fragment>
             <Routes />     
