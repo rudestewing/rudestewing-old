@@ -1,23 +1,23 @@
 import 
     React, 
-    {useEffect, useState} 
+    {
+        useContext,
+        useEffect, 
+        useState
+    } 
 from 'react';
 
-import {collectionState} from './state';
-import {memberState} from './state';
+import {Context} from '../../store/index';
 
 export default (props) => {
     const {id} = props.match.params;
-    const [collection, setCollection] = useState(null);
+    const {collection, collectionDispatch} = useContext(Context);
+    
+    console.log(collection);
 
     useEffect(() => {
-        const selectedCollection = collectionState.find((item) => {
-            return item.id == id;
-        });
-        setCollection(selectedCollection);
-
+       
         return () => {
-            setCollection(null);
         }
     }, []);
 

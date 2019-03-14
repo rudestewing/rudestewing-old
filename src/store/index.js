@@ -2,15 +2,11 @@ import React, {useReducer} from 'react';
 
 export const Context = React.createContext();
 
-export function Provider(props) {
-    const {reducer, initialState} = props;
-    const [state, dispatch] = useReducer(reducer, initialState);
+export function ContextProvider(props) {
+    const {value} = props;
 
     return (
-        <Context.Provider value={{
-            state: state,
-            dispatch: dispatch
-        }}>
+        <Context.Provider value={value}>
             {props.children}
         </Context.Provider>
     )

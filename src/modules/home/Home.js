@@ -1,7 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React,
+    {
+        useContext,
+        useState,
+        useEffect
+    } 
+from 'react';
+
 import HomeVector from '../../assets/images/home-vector.png';
+import {Context} from '../../store/index';
 
 export default (props) => {
+    const {auth, Dispatch} = useContext(Context);
+
+    console.log(auth);
+    
     const person = {
         name: 'rudestewing',
         age: 23,
