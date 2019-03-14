@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+
 import Loading from '../../layouts/Loading';
 
 import ArticleItem from './ArticleItem';
-import imgNoImage from '../../assets/images/no-image.png';
 
 export default () => {
     const [articles] = useState([]);
@@ -10,9 +11,7 @@ export default () => {
     return (
         <div id="article" className="container">
             <div className="row">
-                <div className="article-item">
-                    <img id="thumbnail" src={imgNoImage} alt=""/>
-                </div>
+                <ArticleItem />
             </div>
         </div>
     )
