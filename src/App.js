@@ -6,11 +6,15 @@ import './assets/vendor/fontawesome-free-5.7.2-web/css/all.css';
 import './assets/css/main.scss';
 
 import Routes from './routes/index';
+import {Provider} from 'react-redux';
+import store from './store/index';
 
 export default () => {
     return (
-        <React.Fragment>
-            <Routes />     
-        </React.Fragment>
+        <Provider store={store}>
+            <React.Fragment>
+                <Routes />     
+            </React.Fragment>
+        </Provider>
     )
 }

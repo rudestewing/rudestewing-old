@@ -42,7 +42,6 @@ export const publicRoutes = [
             loading: Loading
         })
     },
-    
 ]
 
 export const privateRoutes = [

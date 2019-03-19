@@ -4,8 +4,25 @@ import CollectionItem from './CollectionItem';
 
 import {collectionState} from './state';
 
-export default (props) => {
+import {connect} from 'react-redux';
+import {addToCart} from './actions';
+
+const mapStateToProps = (state) => {
+    return {
+        auth: state.auth,
+        cart: state.cart
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToCart: (id) => dispatch(addToCart())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)((props) => {
     const [collections, setCollections] = useState([]);
+    const {addToCart} = props;
 
     useEffect(() => {
         var fetchData = setTimeout(() => {
@@ -17,8 +34,14 @@ export default (props) => {
         }
     }, []);
 
+    function handleClick() {
+        addToCart(1);
+
+    }
+
     return (
         <div id="collection" className="container">
+        {/* <button onClick={handleClick}> add to cart </button> */}
             <div className="row">
                 {
                     collections.length > 0 ? 
@@ -32,4 +55,4 @@ export default (props) => {
             </div>
         </div>
     )
-}
+});
