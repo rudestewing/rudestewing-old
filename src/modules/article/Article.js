@@ -17,20 +17,18 @@ const withUser =  (WrappedComponent) => {
     }
 }
 
+const Article = (props) => {
+    console.log(props);
+    const [articles] = useState([]);
 
-export default 
-withUser(
-    (props) => {
-        console.log(props);
-        const [articles] = useState([]);
+    return (
+        <div id="article" className="container">
+            <div className="row">
+                <ArticleItem />
 
-        return (
-            <div id="article" className="container">
-                <div className="row">
-                    <ArticleItem />
-
-                </div>
             </div>
-        )
-    }
-);
+        </div>
+    )
+}
+
+export default withUser(Article);

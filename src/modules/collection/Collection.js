@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)((props) => {
+const Collection = (props) => {
     const [collections, setCollections] = useState([]);
     const {addToCart} = props;
 
@@ -55,4 +55,6 @@ export default connect(mapStateToProps, mapDispatchToProps)((props) => {
             </div>
         </div>
     )
-});
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Collection)
